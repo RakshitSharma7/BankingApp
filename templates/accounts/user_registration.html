@@ -9,13 +9,13 @@
     <p class="block sm:inline">{{ error }}</p>
 </div>
 {% endfor %} {% endif %}
-<div class="px-3 py-4 rounded-xl" style="background-color:#DDE6ED; margin-top: 5%;" >
-    <h1 class="nf text-3xl text-center pb-5">Register</h1>
+<div class="px-3 py-4 rounded-xl" style="background-color:#DDE6ED; margin-top: 1.8%;" >
+    <h1 class="nf text-3xl text-center pb-4">Register</h1>
     
-    <div class="w-full mt-5 " style="padding-left: 3%; padding-right: 3%;">
-        <form method="post" class=" rounded px-8 pt-6 pb-8 mb-4" style="background-color: #DDE6ED;">
+    <div class="w-full mt-4 " style="padding-left: 3%; padding-right: 3%;">
+        <form method="post" class=" rounded px-8 pt-6 pb-8 " style="background-color: #DDE6ED;">
             {% csrf_token %} {% for hidden_field in registration_form.hidden_fields %} {{ hidden_field.errors }} {{ hidden_field }} {% endfor %}
-            <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="flex flex-wrap -mx-3 mb-5">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="{{ registration_form.first_name.id_for_label }}">
                         {{ registration_form.first_name.label }}
@@ -31,7 +31,7 @@
                     {% endfor %} {% endif %}
                 </div>
             </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="flex flex-wrap -mx-3 mb-5">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="{{ registration_form.email.id_for_label }}">
                         {{ registration_form.email.label }}
@@ -47,7 +47,7 @@
                     {% endfor %} {% endif %}
                 </div>
             </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="flex flex-wrap -mx-3 mb-5">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="{{ registration_form.gender.id_for_label }}">
                         {{ registration_form.gender.label }}
@@ -63,7 +63,7 @@
                     {% endfor %} {% endif %}
                 </div>
             </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="flex flex-wrap -mx-3 mb-5">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="{{ registration_form.password1.id_for_label }}">
                         {{ registration_form.password1.label }}
@@ -81,7 +81,7 @@
             </div>
 
             {% for hidden_field in address_form.hidden_fields %} {{ hidden_field.errors }} {{ hidden_field }} {% endfor %}
-            <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="flex flex-wrap -mx-3 mb-5">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="{{ address_form.street_address.id_for_label }}">
                         {{ address_form.street_address.label }}
@@ -97,7 +97,7 @@
                     {% endfor %} {% endif %}
                 </div>
             </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="flex flex-wrap -mx-3 mb-5">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="{{ address_form.postal_code.id_for_label }}">
                         {{ address_form.postal_code.label }}
