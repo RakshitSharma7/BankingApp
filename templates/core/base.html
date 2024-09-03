@@ -8,6 +8,9 @@
             {% block head_title %}Banking System{% endblock %}
         </title>
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700;800&display=swap" rel="stylesheet">
 
         {% block head_extra %}{% endblock %}
         <style>
@@ -18,11 +21,16 @@
             }
             
             body {
-                background-image: url('{% static "img/wp-1.jpg" %}');
+                background-image: url('{% static "img/wp-1.jpg" %}'); 
+                 /* background-color: #93B1A6 */
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
                 padding-bottom: 5em;
+                font-family: "Hind", sans-serif;
+  /* font-weight: 500; */
+  font-style: normal;
+
             }
             body #main{
                 padding-bottom: 5em;
@@ -33,6 +41,23 @@
                 bottom: 0 !important;
                 width: 100%;
             }
+            .newfont{
+            font-family: "Nanum Gothic", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            }
+            .newfont1{
+            font-family: "Nanum Gothic", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            }
+          
+.nf {
+    font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
         </style>
     </head>
     <body class="bg-gray-100">
